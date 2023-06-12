@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header></header>
+
+  <main class="container-fluid">
+    <section class="row text-white justify-content-between">
+      <div class="col-12 p-5 d-flex justify-content-end">
+        <button onclick="reset()">Reset</button>
+      </div>
+      <div class="col-12 d-flex justify-content-center">
+        <div class="text-center">
+          <div class="d-flex justify-content-between">
+            <h1 class="p-5">HOME</h1>
+            <h1 class="p-5">AWAY</h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 d-flex justify-content-center">
+        <div class="d-flex justify-content-between py-4">
+          <p id="scores"></p>
+          <p class="text-center fs-1 py-2 px-5"><span id="homeScoreBoard">0</span></p>
+          <p class="text-center fs-1 py-2 px-5"><span id="awayScoreBoard">0</span></p>
+        </div>
+
+      </div>
+      <div class="col-6 text-center ">
+        <div class="d-flex justify-content-end">
+
+          <button class="m-2" onclick="homeScoreChange(1)">Home +1</button>
+          <button class="m-2" onclick="homeScoreChange(3)">Home +3</button>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button class="m-2" onclick="homeScoreChange(-1)">Home -1</button>
+          <button class="m-2" onclick="homeScoreChange(-3)">Home -3</button>
+        </div>
+      </div>
+      <div class="col-6">
+        <div>
+
+          <button class="m-2" onclick="awayScoreChange(1)">Away +1</button>
+          <button class="m-2" onclick="awayScoreChange(3)">Away +3</button>
+        </div>
+        <div>
+          <button class="m-2" onclick="awayScoreChange(-1)">Away -1</button>
+          <button class="m-2" onclick="awayScoreChange(-3)">Away -3</button>
+        </div>
+      </div>
+      <div class="col-12 d-flex justify-content-center">
+        <div class="text-center">
+          <h1>Total Score</h1>
+          <p class="fs-1 p-2">
+            <span id="totalScore">0</span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- link to javascript -->
+  <script src="app.js"></script>
+</body>
+
+</html>
